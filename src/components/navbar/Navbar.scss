@@ -1,0 +1,91 @@
+@import "../../styles/responsive.scss";
+
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .navbarContainer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+
+        .navbarLogo{
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            gap: 10px;
+
+            span{
+                font-size: 20px;
+            }
+        }
+
+
+        .navbarMenu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+
+            .navbarIcons{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                cursor: pointer;
+
+
+                
+            .icon{
+                cursor: pointer;
+                @include sm{
+                    display: none;
+                }
+            }
+            }
+
+            .notification{
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                position: relative;
+
+                span{
+                    background-color: red;
+                    color: white;
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 12px;
+                    font-weight: 500;
+                    position: absolute;
+                    top: -10px;
+                    right: -12px;
+                }
+
+            }
+
+            .navbarProfile{
+               display: flex;
+               align-items: center;
+               gap: 10px;
+               cursor: pointer;
+
+                img{
+                    width:30px;
+                    height:30px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+
+        }
+    }
+
+
+}

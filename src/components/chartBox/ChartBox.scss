@@ -1,0 +1,78 @@
+@import "../../styles/responsive.scss";
+.chatBox{
+    display: flex;
+    height: 100%;
+    @include sm {
+        flex-direction: column;
+    }
+
+
+    .boxInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 3;
+
+        @include sm {
+            gap:20px
+        }
+    
+
+        .title{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+            @include xxl{
+                font-size: 14px;
+            }
+
+
+            span{
+                font-size: 15px;
+            }
+        }
+
+        h1{
+            font-size: 25px;
+            @include xxl{
+                font-size: 20px;
+            }
+
+        }
+    }
+
+    .chatInfo{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        
+
+        .chart{
+            height: 100%;
+            width: 100%;
+        }
+
+        .texts{
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+
+            .percentage{
+                font-weight: bold;
+                font-size: 18px;
+                color: rgb(0, 172, 0);
+                // color:skyblue
+                @include xxl{
+                    font-size: 14px;
+                }
+    
+            }
+            .duration{
+                font-size: 12px;
+            }
+        }
+    }
+}

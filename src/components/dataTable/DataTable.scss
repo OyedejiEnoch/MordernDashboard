@@ -1,0 +1,50 @@
+.dataTable{
+
+    .dataGrid{
+        background-color: white;
+        padding:20px;
+
+        .MuiDataGrid-toolbarContainer {
+            flex-direction:row-reverse
+        }
+    }
+
+    img{
+        width:32px;
+        height:32px;
+        border-radius:50%;
+        object-fit:cover
+    }
+
+    .status {
+        border:1px dashed gray;
+        padding:10px;
+        border-radius:5px;
+        font-weight:bold;
+        
+
+        span{
+            font-size:12px;
+        }
+    }
+
+    .Paid{ 
+        color:rgb(2, 189, 2);
+        border-color:rgb(12, 95, 12)
+    }
+    .Pending{ 
+        color:rgb(189, 39, 2);
+        border-color:rgb(201, 2, 2)
+    }
+
+    .action{
+        display:flex;
+        gap:10px;
+
+        img{
+            width:20px;
+            height:20px;
+            cursor:pointer;
+        }
+    }
+}

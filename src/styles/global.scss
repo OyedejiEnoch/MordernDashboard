@@ -1,0 +1,45 @@
+@import "./variables.scss";
+@import "./responsive.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+.Main{
+  font-family: "inter", sans-serif;
+  background-color: $main-bg;
+  color:$main-color;
+  width: 100%;
+
+}
+.containerContent{
+  display: flex;
+  margin-bottom: 120px;
+
+
+}
+.menuContainer{
+  width: 250px;
+  padding: 5px 20px;
+  border-right: 2px solid $soft-bg;
+
+  // flex: 1;
+
+  @include lg{
+    width: max-content;
+  }
+}
+.contentContainer{
+  // flex: 5;
+  width: 100%;
+  // height: 100vh;
+  padding: 5px 20px;
+}
